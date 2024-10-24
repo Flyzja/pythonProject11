@@ -20,16 +20,16 @@ new_list1 = pd.concat([df, df1])  # добавляем информацию
 print('ДОБАВИЛИ: ')
 print(new_list1)
 
-df.to_csv('file 5.txt', sep='\t', encoding='utf-8') # записываем в файл
+new_list1.to_csv('file 5.txt', sep='\t', encoding='utf-8') # записываем в файл
 
 
-df = pd.read_fwf('file 5.txt', delimiter='\n')   # читаем из файла
+new_list1 = pd.read_fwf('file 5.txt', delimiter='\n')   # читаем из файла
 print('ЧИТАЕМ ИЗ ФАЙЛА: ')
-print(df)
+print(new_list1)
 
-df = pd.read_table('file 5.txt')       # читаем из файла
+new_list1 = pd.read_table('file 5.txt')       # читаем из файла
 print('ЧИТАЕМ ИЗ ФАЙЛА: ')
-print(df)
+print(new_list1)
 
 a = np.array([1, 2, 3, 4, 5]) # массив из списка
 b = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) # двумерный массив из списка списков
@@ -68,7 +68,7 @@ second_array = np.array([2, 4, 6, 8])
 
 #  + ператор
 result1 = first_array + second_array
-print("+ ператор:", result1)
+print("+ оператор:", result1)
 
 # add() функция
 result2 = np.add(first_array, second_array)
