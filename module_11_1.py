@@ -66,7 +66,7 @@ print(reshaped)
 first_array = np.array([1, 3, 5, 7])
 second_array = np.array([2, 4, 6, 8])
 
-#  + ператор
+#  + оператор
 result1 = first_array + second_array
 print("+ оператор:", result1)
 
