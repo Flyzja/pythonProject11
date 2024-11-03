@@ -3,8 +3,6 @@ import inspect
 
 help(inspect)
 
-def introspection_info(obj):
-    return obj
 
 def introspection_info(obj):
     result = {}
